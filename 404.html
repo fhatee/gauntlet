@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GAUNTLET</title>
+  <script>
+    var path = window.location.pathname;
+    var search = window.location.search;
+    var hash = window.location.hash;
+    var redirect = window.location.origin + '/gauntlet/' + '?p=' + encodeURIComponent(path.slice('/gauntlet/'.length)) + (search ? '&q=' + search.slice(1) : '') + hash;
+    window.location.replace(redirect);
+  </script>
+</head>
+<body>Redirecting...</body>
+</html>
